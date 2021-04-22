@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    padding: 75px;
+    text-align: center;
+
+}
+
+
+.gallery {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-auto-rows: minmax(200px, 1fr);
+    grid-gap: 10px;
+}
+
+
+
+.search-box input {
+    margin: 10px;
+    padding: 10px;
+    width: 55%;
+    border-color: lightgray;
+    border-radius: 5px;
+}
+
+@media (max-width:992px) {
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: minmax(200px, 1fr);
+        grid-gap: 10px;
+    }
+    
+
+}
